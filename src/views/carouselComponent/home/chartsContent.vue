@@ -2,6 +2,7 @@
   <div class="charts_content">
     <div class="charts-left">
       <div class="svg_icon_irr">师资力量</div>
+      <charts-bullet/>
     </div>
     <div class="charts-center">2</div>
     <div class="charts-right">
@@ -12,9 +13,11 @@
 
 <script>
 // import svgIrregular from '../../svgIcon/irregular'
+import chartsBullet from './chartsLeft/bullet'
 export default {
   components: {
     // svgIrregular
+    chartsBullet
   }
 }
 </script>
@@ -36,7 +39,7 @@ export default {
       width: 30%;
       background: url('~@/assets/img/borderL.png') no-repeat;
       position: relative;
-
+      padding: 0 20px;
     }
 
     .charts-center{
@@ -66,5 +69,7 @@ export default {
       line-height: 42px;
     }
   }
+  .charts_title{
 
+  }
 </style>

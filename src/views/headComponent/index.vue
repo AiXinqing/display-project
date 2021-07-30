@@ -14,19 +14,24 @@
         <div v-html="timeDisplayArea" class="now_data" />
       </div>
     </div>
-    <heade-line/>
+    <div class="heade_line">
+      <div class="line_left"></div>
+      <div class="line_center"></div>
+      <div class="line_right"></div>
+    </div>
+    <!-- <heade-line/> -->
   </div>
 </template>
 
 <script>
 import svgRectangle from '../svgIcon/rectangle'
 import svgOval from '../svgIcon/oval.vue'
-import headeLine from '../svgIcon/headeLine'
+// import headeLine from '../svgIcon/headeLine'
 export default {
   components: {
     svgRectangle,
-    svgOval,
-    headeLine
+    svgOval
+    // headeLine
   },
   props: {
     title: {
@@ -135,5 +140,71 @@ export default {
         color: @headeHighlight;
       }
     }
+  }
+  .heade_line{
+    width: 100%;
+    height: 17px;
+    background: url('~@/assets/img/headL.png') no-repeat;
+    position: relative;
+
+    .line_left,
+    .line_right{
+      position: absolute;
+      width: 151px;
+      height: 9px;
+      background: url('~@/assets/img/headLl.png') no-repeat;
+      top: -3px;
+    }
+
+    .line_left{
+      left: 23%;
+      animation-name: lineLCexample;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .line_right{
+      left: 90%;
+      animation-name: lineLRCexample;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .line_center{
+      width: 344px;
+      height: 19px;
+      position: absolute;
+      left: 50%;
+      background: url('~@/assets/img/headeC.png') no-repeat;
+      top: 7px;
+      animation-name: lineCexample;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes lineLCexample {
+      0%   {left: 23%;}
+      50%  {left: 0}
+      100%  {left: 23%;}
+      // 75%  {margin-left: 0;}
+      // 100% {margin-left: 23%;}
+    }
+
+    @keyframes lineLRCexample {
+      0%   {left: 90%;}
+      50%  {left: 69%}
+      100%  {left: 90%;}
+      // 75%  {margin-left: 69%}
+      // 100% {margin-left: 90%;}
+    }
+
+    @keyframes lineCexample {
+      0%   {margin-left: -24px;}
+      50%  {margin-left: -320px}
+      100%  {margin-left: 0;}
+      // 75%  {margin-left: -344px;}
+      // 100% {margin-left: 0;}
+    }
+
   }
 </style>
