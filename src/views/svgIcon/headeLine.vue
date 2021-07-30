@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1906px" height="17px" viewBox="0 0 1906 17" version="1.1">
+  <svg  width="1906px" height="17px" viewBox="0 0 1906 17">
     <title>路径</title>
     <defs>
         <linearGradient x1="50%" y1="-26.3744907%" x2="50%" y2="100%" id="linearGradient-1">

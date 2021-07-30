@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72px" height="72px" viewBox="0 0 72 72" version="1.1">
+  <svg  width="72px" height="72px" viewBox="0 0 72 72" >
     <title>编组 43</title>
     <defs>
         <linearGradient x1="-7.3032887%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">

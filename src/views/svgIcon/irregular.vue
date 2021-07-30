@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147px" height="42px" viewBox="0 0 147 42" version="1.1">
+  <svg width="147px" height="42px" viewBox="0 0 147 42">
     <title>编组 46</title>
     <defs>
         <linearGradient x1="62.9049928%" y1="47.8458569%" x2="36.5826417%" y2="52.7041656%" id="linearGradient-1">
@@ -32,15 +32,31 @@
             </g>
         </g>
     </g>
+    <text class="text_irr" :x="147/2" :y="42/2 + 1" >{{svgText}}</text>
   </svg>
 </template>
 
 <script>
 export default {
-
+  props: {
+    svgText: {
+      type: String,
+      default: '师资力量'
+    }
+  }
 }
 </script>
 
 <style lang="less" scoped>
-
+  @import '~@/assets/css/variables.less';
+  text {
+    stroke-width: 1;
+    font-size: 20px;
+    text-anchor: middle;
+    /* 文本水平居中 */
+    dominant-baseline: middle;
+    font-family: @MicrosoftYaHeiBold;
+    /* 文本垂直居中 */
+    fill: @irrC;
+  }
 </style>
