@@ -2,7 +2,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72px" height="72px" viewBox="0 0 72 72" version="1.1">
     <title>编组 39</title>
     <defs>
-        <linearGradient x1="-7.3032887%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+        <linearGradient x1="-5.3032887%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
             <stop stop-color="#00FFFC" offset="0%"/>
             <stop stop-color="#00FFFB" stop-opacity="0" offset="28.6758923%"/>
             <stop stop-color="#00FFFA" stop-opacity="0.500326826" offset="47.0264355%"/>
@@ -34,7 +34,7 @@
             </g>
         </g>
     </g>
-  </svg>
+</svg>
 </template>
 
 <script>
