@@ -4,7 +4,9 @@
       <div class="svg_icon_irr">师资力量</div>
       <charts-bullet/>
     </div>
-    <div class="charts-center">2</div>
+    <div class="charts-center">
+      <charts-center/>
+    </div>
     <div class="charts-right">
       <div class="svg_icon_irr">学生情况</div>
     </div>
@@ -14,10 +16,12 @@
 <script>
 // import svgIrregular from '../../svgIcon/irregular'
 import chartsBullet from './chartsLeft/bullet'
+import chartsCenter from './chartsCenter'
 export default {
   components: {
     // svgIrregular
-    chartsBullet
+    chartsBullet,
+    chartsCenter
   }
 }
 </script>
