@@ -7,14 +7,9 @@
     >
       <div class="digital-flop-title">{{ item.title }}</div>
       <div class="digital-flop">
-        <!-- <dv-digital-flop
-          :config="item.number"
-          style="width: 129px; height: 50px;"
-        /> -->
         <div class="flop_num">{{item.number}}</div>
         <div class="unit">{{ item.unit }}</div>
         <div :class="['svgIcon',item.svgIcon]"></div>
-        <!-- <component class="svgIcon" :is="item.svgIcon" /> -->
       </div>
     </div>
 
