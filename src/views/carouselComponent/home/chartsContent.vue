@@ -5,6 +5,11 @@
       <charts-bullet/>
     </div>
     <div class="charts-center">
+      <div class="charts-center-title">
+        <span class="icon"></span>
+        <span class="text">学生出勤统计</span>
+        <span class="icon"></span>
+      </div>
       <charts-center/>
     </div>
     <div class="charts-right">
@@ -40,10 +45,11 @@ export default {
 
     .charts-left{
       min-width: 496px;
+      min-height: 791px;
       width: 30%;
       background: url('~@/assets/img/borderL.png') no-repeat;
       position: relative;
-      padding: 0 20px;
+      // padding: 0 20px;
     }
 
     .charts-center{
@@ -52,6 +58,7 @@ export default {
 
     .charts-right{
       min-width: 496px;
+      min-height: 791px;
       width: 30%;
       background: url('~@/assets/img/borderR.png') no-repeat;
       position: relative;
@@ -73,7 +80,23 @@ export default {
       line-height: 42px;
     }
   }
-  .charts_title{
+  .charts-center-title{
+    text-align: center;
+    font-size: 20px;
+    font-family: @MicrosoftYaHeiBold;
+    font-weight: bold;
+    color: @irrC;
 
+    span{
+      &.icon{
+        display: inline-block;
+        width: 46px;
+        height: 11px;
+        background: url('~@/assets/img/attendance_3.png') no-repeat;
+      }
+      &.text{
+        margin: 0 10px;
+      }
+    }
   }
 </style>
