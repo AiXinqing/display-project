@@ -13,7 +13,8 @@
         /> -->
         <div class="flop_num">{{item.number}}</div>
         <div class="unit">{{ item.unit }}</div>
-        <component class="svgIcon" :is="item.svgIcon" />
+        <div :class="['svgIcon',item.svgIcon]"></div>
+        <!-- <component class="svgIcon" :is="item.svgIcon" /> -->
       </div>
     </div>
 
@@ -21,22 +22,22 @@
 </template>
 
 <script>
-import gradesNum from '../../svgIcon/gradesNum'
-import classNum from '../../svgIcon/classNum'
-import FacultyNum from '../../svgIcon/FacultyNum'
-import soleDuty from '../../svgIcon/soleDuty'
-import studentNum from '../../svgIcon/studentNum'
-import teacherStudent from '../../svgIcon/teacher-student'
+// import gradesNum from '../../svgIcon/gradesNum'
+// import classNum from '../../svgIcon/classNum'
+// import FacultyNum from '../../svgIcon/FacultyNum'
+// import soleDuty from '../../svgIcon/soleDuty'
+// import studentNum from '../../svgIcon/studentNum'
+// import teacherStudent from '../../svgIcon/teacher-student'
 export default {
   name: 'DigitalFlop',
 
   components: {
-    gradesNum,
-    classNum,
-    FacultyNum,
-    soleDuty,
-    studentNum,
-    teacherStudent
+    // gradesNum,
+    // classNum,
+    // FacultyNum,
+    // soleDuty,
+    // studentNum,
+    // teacherStudent
   },
 
   data () {
@@ -53,90 +54,36 @@ export default {
           title: '年级总数',
           number: 9,
           unit: '个',
-          // number: {
-          //   number: [randomExtend(20000, 30000)],
-          //   content: '{nt} 个',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'gradesNum'
         },
         {
           title: '班级总数',
           number: 50,
           unit: '个',
-          // number: {
-          //   number: [randomExtend(20, 30)],
-          //   content: '{nt}  个',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'classNum'
         },
         {
           title: '教职工总人数',
           number: 45,
           unit: '人',
-          // number: {
-          //   number: [randomExtend(20, 30)],
-          //   content: '{nt} 人',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'FacultyNum'
         },
         {
           title: '专职教师人数',
           number: 20,
           unit: '人',
-          // number: {
-          //   number: [randomExtend(10, 20)],
-          //   content: '{nt} 人',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'soleDuty'
         },
         {
           title: '学生总人数',
           number: 44,
           unit: '人',
-          // number: {
-          //   number: [randomExtend(5, 10)],
-          //   content: '{nt} 人',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'studentNum'
         },
         {
           title: '师生比',
           number: '1:8',
           unit: '人',
-          // number: {
-          //   number: [randomExtend(5, 10)],
-          //   content: '{nt} 人',
-          //   textAlign: 'left',
-          //   style: {
-          //     fill: '#00FFF8',
-          //     fontWeight: 'bold'
-          //   }
-          // },
           svgIcon: 'teacherStudent'
         }
 
@@ -199,6 +146,30 @@ export default {
       position: absolute;
       right:35px;
       bottom:0;
+      width: 72px;
+      height: 72px;
+      background-size: 100% 100%;
+      background: url('~@/assets/img/indexIcon.png') -39px -49px no-repeat;
+
+      &.classNum{
+        background: url('~@/assets/img/indexIcon.png') -149px -49px no-repeat;
+      }
+
+      &.FacultyNum{
+        background: url('~@/assets/img/indexIcon.png') -259px -49px no-repeat;
+      }
+
+      &.soleDuty{
+        background: url('~@/assets/img/indexIcon.png') -369px -49px no-repeat;
+      }
+
+      &.studentNum{
+        background: url('~@/assets/img/indexIcon.png') -479px -49px no-repeat;
+      }
+
+      &.teacherStudent{
+        background: url('~@/assets/img/indexIcon.png') -589px -49px no-repeat;
+      }
     }
   }
 
