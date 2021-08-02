@@ -1,5 +1,5 @@
 <template>
-  <div id="slide-wrap" @mouseover="pasue" @mouseout="play">
+  <div id="slide-wrap">
 
     <div id="slide-content" ref="con1" :class="{anim:animate==true}" >
       <!-- <div v-for='(item,i) in items' :key="i">{{item.name}}</div> -->
@@ -37,14 +37,15 @@ export default {
       }, 200)
     },
 
-    pasue () {
-      console.log('暂停')
-      // clearInterval(this.timer)
-    },
-    play () {
-      console.log('播放')
-      // this.autoSwitch()
-    },
+    // pasue () {
+    //   @mouseover="pasue" @mouseout="play"
+    //   console.log('暂停')
+    //   // clearInterval(this.timer)
+    // },
+    // play () {
+    //   console.log('播放')
+    //   // this.autoSwitch()
+    // },
     autoSwitch () { // 自动播放
       this.timer = setInterval(this.scroll, 5000)
     }
