@@ -1,10 +1,10 @@
 <template>
   <div class="charts_box">
-    <div class="charts_title">
+    <!-- <div class="charts_title">
       <div class="h3">教师职称人数分布</div>
-      <div class="h3">教师职称人数分布</div>
-    </div>
-    <div id="container" style="height:300px;width:calc(100% - 40px)"></div>
+      <div class="h3">PROFESSIONAL TITLE FOR TEACHERS</div>
+    </div> -->
+    <!-- <div id="container" style="height:300px;width:calc(100% - 40px)"></div> -->
   </div>
 </template>
 
