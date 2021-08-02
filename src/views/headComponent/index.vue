@@ -157,53 +157,47 @@ export default {
     }
 
     .line_left{
-      left: 23%;
+      left: 32%;
       animation-name: lineLCexample;
-      animation-duration: 4s;
+      animation-duration: 2.5s;
       animation-iteration-count: infinite;
     }
 
-    .line_right{
-      left: 90%;
-      animation-name: lineLRCexample;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
+    @keyframes lineLCexample {
+      0% {left: 0%;}
+      50% {left: 0%;width:32%;background-size: 100% 100%;}
+      100% {left: 26%;background-size: 100% 100%;width: 7%;}
     }
 
     .line_center{
       width: 344px;
       height: 19px;
       position: absolute;
-      left: 50%;
+      left: 34%;
       background: url('~@/assets/img/headeC.png') no-repeat;
       top: 7px;
       animation-name: lineCexample;
-      animation-duration: 4s;
+      animation-duration: 2.5s;
       animation-iteration-count: infinite;
     }
 
-    @keyframes lineLCexample {
-      0%   {left: 23%;}
-      50%  {left: 0}
-      100%  {left: 23%;}
-      // 75%  {margin-left: 0;}
-      // 100% {margin-left: 23%;}
+    @keyframes lineCexample {
+      0%   {left: 33%;}
+      50%  {width: 22%;background-size: 100% 100%;}
+      100%  {left: 48%;}
+    }
+
+    .line_right{
+      left: 90%;
+      animation-name: lineLRCexample;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
     }
 
     @keyframes lineLRCexample {
-      0%   {left: 90%;}
-      50%  {left: 69%}
-      100%  {left: 90%;}
-      // 75%  {margin-left: 69%}
-      // 100% {margin-left: 90%;}
-    }
-
-    @keyframes lineCexample {
-      0%   {margin-left: -24px;}
-      50%  {margin-left: -320px}
-      100%  {margin-left: 0;}
-      // 75%  {margin-left: -344px;}
-      // 100% {margin-left: 0;}
+      0%   {left: 67%;}
+      50%  {width: 34%;background-size: 100% 100%;left: 66%;}
+      100%  {width: 7%;background-size: 100% 100%;left: 92%}
     }
 
   }
