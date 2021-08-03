@@ -1,74 +1,98 @@
 <template>
   <div class="charts_box">
-    <!-- <div class="charts_title">
+    <div class="charts_title">
       <div class="h3">教师职称人数分布</div>
-      <div class="h3">PROFESSIONAL TITLE FOR TEACHERS</div>
-    </div> -->
-    <!-- <div id="container" style="height:300px;width:calc(100% - 40px)"></div> -->
+      <div class="h4">PROFESSIONAL TITLE FOR TEACHERS</div>
+    </div>
+    <div class="progress_box"
+      v-for="item in progressList"
+      :key="item.id"
+    >
+      <vueProgress
+        :progress="item"
+      />
+    </div>
+    <!-- <div id="container" style="height:220px;width:calc(100% - 40px)"></div> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import { Bullet } from '@antv/g2plot'
 
-// export default {
-//   name: 'Home',
-//   components: {
+export default {
+  name: 'Home',
+  components: {
 
-//   },
+  },
 
-//   mounted () {
-//     const data = [
-//       {
-//         title: '满意度',
-//         ranges: [100],
-//         measures: [80],
-//         target: 85
-//       }
-//     ]
+  data () {
+    return {
+      progressList: [
+        {
+          name: '中学一级',
+          percentage: '80%',
+          num: '190',
+          unit: '人',
+          color: 'linear-gradient(90deg, #F66E4B 0%, #F6524B 100%)',
+          borderColor: '#F6534B',
+          id: 1
+        },
+        {
+          name: '中学二级',
+          percentage: '70%',
+          num: '90',
+          unit: '人',
+          color: 'linear-gradient(90deg, #F0AE3B 0%, #F08B3B 100%)',
+          borderColor: '#F08C3B',
+          id: 1
+        },
+        {
+          name: '正高级',
+          percentage: '68%',
+          num: '79',
+          unit: '人',
+          color: 'linear-gradient(90deg, #F0F03E 0%, #F0CC3E 100%)',
+          borderColor: '#F0D13E',
+          id: 1
+        },
+        {
+          name: '特级',
+          percentage: '45%',
+          num: '60',
+          unit: '人',
+          color: 'linear-gradient(90deg, #31DE33 0%, #12C614 100%)',
+          borderColor: '#13C816',
+          id: 1
+        }
+      ]
+    }
+  },
 
-//     const bulletPlot = new Bullet('container', {
-//       data,
-//       measureField: 'measures',
-//       rangeField: 'ranges',
-//       targetField: 'target',
-//       xField: 'title',
-//       color: {
-//         range: '#fff',
-//         measure: '#ffffff',
-//         target: '#ffffff'
-//       },
-//       xAxis: {
-//         line: null
-//       },
-//       yAxis: {
-//         tickMethod: ({ max }) => {
-//           const interval = Math.ceil(max / 5)
-//           // 自定义刻度 ticks
-//           return [0, interval, interval * 2, interval * 3, interval * 4, max]
-//         }
-//       },
-//       // 自定义 legend
-//       legend: {
-//         custom: true,
-//         position: 'bottom',
-//         items: [
-//           {
-//             value: '实际值',
-//             name: '实际值',
-//             marker: { symbol: 'square', style: { fill: '#5B8FF9', r: 5 } }
-//           },
-//           {
-//             value: '目标值',
-//             name: '目标值',
-//             marker: { symbol: 'line', style: { stroke: '#3D76DD', r: 5 } }
-//           }
-//         ]
-//       }
-//     })
+  mounted () {
 
-//     bulletPlot.render()
-//   }
-// }
+  }
+}
 </script>
+
+<style lang="less">
+  @import '~@/assets/css/variables.less';
+  .charts_title{
+    height: 40px;
+    text-indent: 20px;
+    color: @irrC;
+    .h3{
+      font-size: 18px;
+      font-family: @MicrosoftYaHeiBold;
+      font-weight: bold;
+    }
+    .h4{
+      font-size: 12px;
+      font-family: @Yahei;
+    }
+    margin-bottom: 20px;
+  }
+  .progress_box{
+    width: cacl(100% - 40px);
+    padding: 0 20px;
+  }
+</style>
