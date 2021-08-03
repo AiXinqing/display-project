@@ -17,22 +17,10 @@
 </template>
 
 <script>
-// import gradesNum from '../../svgIcon/gradesNum'
-// import classNum from '../../svgIcon/classNum'
-// import FacultyNum from '../../svgIcon/FacultyNum'
-// import soleDuty from '../../svgIcon/soleDuty'
-// import studentNum from '../../svgIcon/studentNum'
-// import teacherStudent from '../../svgIcon/teacher-student'
 export default {
   name: 'DigitalFlop',
 
   components: {
-    // gradesNum,
-    // classNum,
-    // FacultyNum,
-    // soleDuty,
-    // studentNum,
-    // teacherStudent
   },
 
   data () {
