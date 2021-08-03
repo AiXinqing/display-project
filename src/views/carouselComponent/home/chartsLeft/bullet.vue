@@ -44,7 +44,7 @@ export default {
           unit: '人',
           color: 'linear-gradient(90deg, #F0AE3B 0%, #F08B3B 100%)',
           borderColor: '#F08C3B',
-          id: 1
+          id: 123
         },
         {
           name: '正高级',
@@ -53,7 +53,7 @@ export default {
           unit: '人',
           color: 'linear-gradient(90deg, #F0F03E 0%, #F0CC3E 100%)',
           borderColor: '#F0D13E',
-          id: 1
+          id: 134
         },
         {
           name: '特级',
@@ -62,7 +62,7 @@ export default {
           unit: '人',
           color: 'linear-gradient(90deg, #31DE33 0%, #12C614 100%)',
           borderColor: '#13C816',
-          id: 1
+          id: 122
         }
       ]
     }

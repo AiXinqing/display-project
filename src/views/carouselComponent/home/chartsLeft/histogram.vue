@@ -71,9 +71,9 @@ export default {
 <style lang="less">
   @import '~@/assets/css/variables.less';
   .charts_box{
-    margin-top: 5px;
+    // margin-top: 5px;
     &.mt_40{
-      margin-top: 40px;
+      margin-top: 27px;
     }
   }
 

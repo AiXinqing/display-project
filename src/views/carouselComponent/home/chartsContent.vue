@@ -4,6 +4,7 @@
       <div class="svg_icon_irr">师资力量</div>
       <charts-bullet/>
       <charts-histogram/>
+      <charts-circular/>
     </div>
     <div class="charts-center">
       <div class="charts-center-title">
@@ -23,12 +24,14 @@
 // import svgIrregular from '../../svgIcon/irregular'
 import chartsBullet from './chartsLeft/bullet'
 import chartsHistogram from './chartsLeft/histogram'
+import chartsCircular from './chartsLeft/circular'
 import chartsCenter from './chartsCenter'
 export default {
   components: {
     // svgIrregular
     chartsBullet,
     chartsHistogram,
+    chartsCircular,
     chartsCenter
   }
 }
