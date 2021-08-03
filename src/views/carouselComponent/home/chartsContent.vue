@@ -3,6 +3,7 @@
     <div class="charts-left">
       <div class="svg_icon_irr">师资力量</div>
       <charts-bullet/>
+      <charts-histogram/>
     </div>
     <div class="charts-center">
       <div class="charts-center-title">
@@ -21,11 +22,13 @@
 <script>
 // import svgIrregular from '../../svgIcon/irregular'
 import chartsBullet from './chartsLeft/bullet'
+import chartsHistogram from './chartsLeft/histogram'
 import chartsCenter from './chartsCenter'
 export default {
   components: {
     // svgIrregular
     chartsBullet,
+    chartsHistogram,
     chartsCenter
   }
 }
