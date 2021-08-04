@@ -17,6 +17,7 @@
     <div class="charts-right">
       <div class="svg_icon_irr">学生情况</div>
       <charts-pie/>
+      <charts-ring-pie/>
     </div>
   </div>
 </template>
@@ -27,6 +28,7 @@ import chartsBullet from './chartsLeft/bullet'
 import chartsHistogram from './chartsLeft/histogram'
 import chartsCircular from './chartsLeft/circular'
 import chartsPie from './chartsRight/pie'
+import chartsRingPie from './chartsRight/ringPie'
 import chartsCenter from './chartsCenter'
 export default {
   components: {
@@ -35,6 +37,7 @@ export default {
     chartsHistogram,
     chartsCircular,
     chartsPie,
+    chartsRingPie,
     chartsCenter
   }
 }
