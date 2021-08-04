@@ -1,6 +1,6 @@
 <template>
   <div class="charts_box">
-    <div class="charts_title">
+    <div class="charts_title" style="margin-bottom:0px">
       <div class="h3">性别比例</div>
       <div class="h4">GENDER RATIO</div>
     </div>
