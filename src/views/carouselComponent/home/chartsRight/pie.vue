@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style lang="less" >
-  #containerPie{
+  #containerSexPie{
     margin-left:20px;
   }
 </style>
