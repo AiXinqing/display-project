@@ -1,6 +1,6 @@
 <template>
   <div class="charts_box">
-    <div class="charts_title" style="margin-bottom:0px">
+    <div class="charts_title" style="margin-bottom:10px">
       <div class="h3">学生就读方式</div>
       <div class="h4">STUDYING WAY OF STUD</div>
     </div>
